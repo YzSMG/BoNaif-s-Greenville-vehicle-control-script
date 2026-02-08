@@ -50,7 +50,7 @@ UIS.InputEnded:Connect(function(input) if input.UserInputType == Enum.UserInputT
 
 -- 3. Header
 local title = Instance.new("TextLabel")
-title.Text = "Vehicle Control"
+title.Text = "Suspension control script"
 title.Size = UDim2.new(0, 150, 0, 40)
 title.Position = UDim2.new(0, 20, 0, 5)
 title.TextColor3 = Color3.new(1, 1, 1)
