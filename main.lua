@@ -137,6 +137,18 @@ toggle.TextSize = 14
 toggle.Parent = frame
 Instance.new("UICorner", toggle).CornerRadius = UDim.new(0, 8)
 
+-- Open suspension GUI
+
+local sus = Instance.new("TextButton")
+sus.Size = UDim2.new(1, -20, 0, 32)
+sus.Position = UDim2.new(0, 10, 0, 120)
+sus.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+sus.TextColor3 = Color3.new(1, 1, 1)
+sus.Font = Enum.Font.Gotham
+sus.TextSize = 14
+sus.Parent = frame
+Instance.new("UICorner", sus).CornerRadius = UDim.new(0, 8)
+
 -- Credits
 local credits = Instance.new("TextLabel")
 credits.Size = UDim2.new(1, -10, 0, 20)
@@ -150,6 +162,7 @@ credits.Parent = frame
 -- ========== Functions ==========
 local function updateTexts()
 	title.Text = language == "EN" and "Vehicle Speed" or "سرعة المركبة"
+
 	if directionMode == 0 then
 		toggle.Text = language == "EN" and "Car Direction: OFF" or "اتجاه المركبة: إيقاف"
 	elseif directionMode == 1 then
@@ -157,9 +170,14 @@ local function updateTexts()
 	else
 		toggle.Text = language == "EN" and "Car Direction: FORCE" or "اتجاه المركبة: قوة"
 	end
+
+	sus.Text = language == "EN" and "Suspension Settings" or "إعدادات التعليق"
+	susTitle.Text = language == "EN" and "Suspension" or "التعليق"
+
 	credits.Text = language == "EN" and "Credits: BoNaif" or "الحقوق: BoNaif"
 	langToggle.Text = language == "EN" and "AR" or "EN"
 end
+
 updateTexts()
 
 -- Minimize button
