@@ -174,7 +174,6 @@ minimize.MouseButton1Click:Connect(function()
 		toggle.Visible = false
 		credits.Visible = false
 		langToggle.Visible = false
-		killButton.Visible = false
 	else
 		frame.Size = fullSize
 		input.Visible = true
