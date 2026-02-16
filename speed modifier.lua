@@ -136,6 +136,7 @@ toggle.Font = Enum.Font.Gotham
 toggle.TextSize = 14
 toggle.Parent = frame
 Instance.new("UICorner", toggle).CornerRadius = UDim.new(0, 8)
+
 -- Credits
 local credits = Instance.new("TextLabel")
 credits.Size = UDim2.new(1, -10, 0, 20)
@@ -149,7 +150,6 @@ credits.Parent = frame
 -- ========== Functions ==========
 local function updateTexts()
 	title.Text = language == "EN" and "Vehicle Speed" or "سرعة المركبة"
-
 	if directionMode == 0 then
 		toggle.Text = language == "EN" and "Car Direction: OFF" or "اتجاه المركبة: إيقاف"
 	elseif directionMode == 1 then
@@ -157,11 +157,9 @@ local function updateTexts()
 	else
 		toggle.Text = language == "EN" and "Car Direction: FORCE" or "اتجاه المركبة: قوة"
 	end
-
 	credits.Text = language == "EN" and "Credits: BoNaif" or "الحقوق: BoNaif"
 	langToggle.Text = language == "EN" and "AR" or "EN"
 end
-
 updateTexts()
 
 -- Minimize button
@@ -174,6 +172,7 @@ minimize.MouseButton1Click:Connect(function()
 		toggle.Visible = false
 		credits.Visible = false
 		langToggle.Visible = false
+		killButton.Visible = false
 	else
 		frame.Size = fullSize
 		input.Visible = true
