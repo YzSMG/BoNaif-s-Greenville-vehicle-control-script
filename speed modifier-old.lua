@@ -81,7 +81,7 @@ local fullSize = frame.Size
 
 local minimize = Instance.new("TextButton")
 minimize.Size = UDim2.new(0, 28, 0, 28)
-minimize.Position = UDim2.new(1, -34, 0, 6)
+minimize.Position = UDim2.new(1, -70, 0, 6)
 minimize.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
 minimize.Text = "–"
 minimize.TextColor3 = Color3.new(1, 1, 1)
@@ -93,7 +93,7 @@ Instance.new("UICorner", minimize).CornerRadius = UDim.new(0, 6)
 -- Language button
 local langToggle = Instance.new("TextButton")
 langToggle.Size = UDim2.new(0, 28, 0, 28)
-langToggle.Position = UDim2.new(1, -70, 0, 6) -- next to minimize
+langToggle.Position = UDim2.new(1, -34, 0, 6) -- next to minimize
 langToggle.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
 langToggle.TextColor3 = Color3.new(1, 1, 1)
 langToggle.Font = Enum.Font.GothamBold
@@ -104,7 +104,7 @@ Instance.new("UICorner", langToggle).CornerRadius = UDim.new(0, 6)
 -- Kill switch button
 local killButton = Instance.new("TextButton")
 killButton.Size = UDim2.new(0, 28, 0, 28)
-killButton.Position = UDim2.new(1, -106, 0, 6) -- next to language button
+killButton.Position = UDim2.new(1, -34, 0, 6) -- next to language button
 killButton.BackgroundColor3 = Color3.fromRGB(200, 50, 50)
 killButton.Text = "X"
 killButton.TextColor3 = Color3.new(1, 1, 1)
