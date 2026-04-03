@@ -233,6 +233,8 @@ UserInputService.InputChanged:Connect(function(inputObj)
 	end
 end)
 
+print("Car speed Modifier script made by ujade, Have fun!")
+
 -- ================= Vehicle Logic =================
 RunService.Stepped:Connect(function()
 	local Character = LocalPlayer.Character
