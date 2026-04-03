@@ -93,7 +93,7 @@ Instance.new("UICorner", minimize).CornerRadius = UDim.new(0, 6)
 -- Language button
 local langToggle = Instance.new("TextButton")
 langToggle.Size = UDim2.new(0, 28, 0, 28)
-langToggle.Position = UDim2.new(1, -34, 0, 6) -- next to minimize
+langToggle.Position = UDim2.new(1, -106, 0, 6) -- next to minimize
 langToggle.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
 langToggle.TextColor3 = Color3.new(1, 1, 1)
 langToggle.Font = Enum.Font.GothamBold
